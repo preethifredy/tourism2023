@@ -210,11 +210,11 @@ html {
   }
   
   .owl-theme.owl-carousel.carousel-mirror .owl-nav button.owl-next:hover {
-    background: url("../../public/icons/arrow-sm-next-hover.svg") no-repeat 0 0;
+    background: url("/icons/arrow-sm-next-hover.svg") no-repeat 0 0;
   }
   
   .owl-theme.owl-carousel.carousel-mirror .owl-nav button.owl-prev:hover {
-    background: url("../../public/icons/arrow-sm-prev-hover.svg") no-repeat 0 0;
+    background: url("/icons/arrow-sm-prev-hover.svg") no-repeat 0 0;
   }
   
   .posCenter {
