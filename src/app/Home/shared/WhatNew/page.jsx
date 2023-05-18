@@ -1,15 +1,23 @@
+'use client'
 import React, { useState } from "react";
-import OwlCarousel from "react-owl-carousel";
-import { Section } from "@components";
+
+import dynamic from "next/dynamic";
+const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
+  ssr: false,
+});
+//import OwlCarousel from "react-owl-carousel";
+//import { Section } from "@components";
 
 import WhatNewItem from './components/WhatNewItem';
 import { whatsNewItems } from '../data';
 
 import './_whatNew.scss';
+import Section from "@/app/components/Section";
 
 const WhatNew = () => {
   const [whatsNew, setWhatNew] = useState(whatsNewItems);
   return (
+    
     <Section
       id="block-essential"
       className="what-new section-block"

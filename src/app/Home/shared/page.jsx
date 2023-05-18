@@ -1,5 +1,5 @@
 import HomeStorySlider from './HomeStory/page';
-// import WhatNew from "./WhatNew";
+import WhatNew from "./WhatNew/page";
 // import Story from "./Story";
 // import Memories from "./Memories";
 // import Discover from './Discover';
@@ -11,7 +11,7 @@ import HomeStorySlider from './HomeStory/page';
 
 export { 
   HomeStorySlider,
-  // WhatNew, 
+  WhatNew, 
   // Story, 
   // Memories,
   // Discover,
