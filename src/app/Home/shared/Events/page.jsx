@@ -1,6 +1,13 @@
+import LinkButton from '@/app/components/LinkButton';
+import { EventCard } from '@/app/components/page';
+import Section from '@/app/components/Section';
 import React from 'react';
-import OwlCarousel from "react-owl-carousel";
-import { Section, EventCard, LinkButton } from "@components";
+//import OwlCarousel from "react-owl-carousel";
+import dynamic from "next/dynamic";
+const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
+  ssr: false,
+});
+//import { Section, EventCard, LinkButton } from "@components";
 
 import { events } from '../data';
 

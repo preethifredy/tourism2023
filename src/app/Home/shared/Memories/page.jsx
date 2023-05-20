@@ -1,9 +1,12 @@
+'use client'
 import React, { useEffect, useState } from "react";
-import { Section, LinkButton } from "@components";
-import { fetchMemoriesForLifeTime } from "@api";
-import MemoryList from "./components/MemoryList";
+import { fetchMemoriesForLifeTime } from "@app/api/page";
+
 
 import './_memories.scss';
+import Section from "@/app/components/Section";
+import LinkButton from "@/app/components/LinkButton";
+import MemoryList from "./components/MemoryList";
 
 
 const Memories = () => {
@@ -20,7 +23,8 @@ const Memories = () => {
     fetcMemories();
   }, []);
 
-  return (
+  return ( 
+      
     <Section
       id="block-memories"
       className="section-block position-relative bg-light"

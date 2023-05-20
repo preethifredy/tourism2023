@@ -1,6 +1,10 @@
 //import './globals.css'
 import { Inter } from 'next/font/google'
 import '@app/styles/scss/App.scss';
+import Footer from "./components/Footer/page";
+
+import Header from "./components/Header/page";
+import NewsLetter from './components/NewsLetter';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -28,7 +32,11 @@ export default function RootLayout({ children }) {
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
       
-      <body className="pageDetail">{children}
+      <body className="pageDetail">
+        <Header />
+        {children}
+        <NewsLetter />
+        <Footer />
      <script src="https://code.jquery.com/jquery-3.4.1.min.js"> </script> 
       </body>      
     </html>

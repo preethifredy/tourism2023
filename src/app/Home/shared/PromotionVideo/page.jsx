@@ -1,4 +1,4 @@
-import React from "react";
+import Link from 'next/link';
 
 import './_promotionVideo.scss';
 
@@ -9,7 +9,7 @@ const PromotionVideo = () => {
         <div className="row">
           <img src="/video/video-bg.jpg" alt="" />
           <div className="play-btn posCenter">
-            <a href="/" className="btn-stroke">
+            <Link href="/" className="btn-stroke">
               <svg
                 version="1.1"
                 x="0px"
@@ -42,7 +42,7 @@ const PromotionVideo = () => {
                   r="103.3"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

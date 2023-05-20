@@ -1,23 +1,23 @@
 import HomeStorySlider from './HomeStory/page';
 import WhatNew from "./WhatNew/page";
-// import Story from "./Story";
-// import Memories from "./Memories";
-// import Discover from './Discover';
-// import KeralaStory from "./KeralaStory";
-// import Events from './Events';
-// import Destination from './Destination';
-// import SocialGallery from './SocialGallery';
-// import PromotionVideo from './PromotionVideo'
+ import Story from "./Story/page";
+ import Memories from "./Memories/page";
+ import Discover from './Discover/page';
+ import KeralaStory from "./KeralaStory/page";
+import Events from './Events/page';
+import Destination from './Destination/page';
+import SocialGallery from './SocialGallery/page';
+import PromotionVideo from './PromotionVideo/page'
 
 export { 
   HomeStorySlider,
   WhatNew, 
-  // Story, 
-  // Memories,
-  // Discover,
-  // KeralaStory,
-  // Events,
-  // Destination,
-  // SocialGallery,
-  // PromotionVideo
+  Story, 
+  Memories,
+  Discover,
+  KeralaStory,
+  Events,
+  Destination,
+  SocialGallery,
+ PromotionVideo
 };

@@ -1,8 +1,11 @@
 import React from "react";
 import { chunk, forEach } from "lodash";
-import { Section, SocialGallery, LinkButton } from "@components";
+//import { Section, SocialGallery, LinkButton } from "@components";
 
 import { socialMediaImages } from "../data";
+import Section from "@/app/components/Section";
+import SocialGallery from "@/app/components/SocialGallery";
+import LinkButton from "@/app/components/LinkButton";
 
 const SocialGalleryCarousal = () => {
   let imageChunks = chunk(socialMediaImages, 5);
@@ -13,7 +16,7 @@ const SocialGalleryCarousal = () => {
     imageChunksForGrid[chunkIndex] = chunks;
   });
 
-  return (
+  return (    
     <Section
       id="block-social-post"
       className="section-block"

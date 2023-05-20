@@ -1,15 +1,22 @@
 import React from "react";
-import OwlCarousel from "react-owl-carousel";
-
-import { Section, LinkButton } from "@components";
-import StoryItem from './components/StoryItem';
+//import OwlCarousel from "react-owl-carousel";
+import dynamic from "next/dynamic";
+const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
+  ssr: false,
+});
+//import { Section, LinkButton } from "@components";
+//import StoryItem from './components/StoryItem';
 
 import { keralaStoriesItems } from '../data';
 
 import './_keralaStory.scss'
+import Section from "@/app/components/Section";
+import LinkButton from "@/app/components/LinkButton";
+import StoryItem from "./components/StoryItem";
 
 const KeralaStory = () => {
-  return (
+  return ( 
+      
     <Section
       id="block-kerala-story"
       className="kerala-story section-block position-relative pt-3"

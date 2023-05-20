@@ -1,11 +1,15 @@
+import LinkButton from '@/app/components/LinkButton';
+import { DestinationCard } from '@/app/components/page';
+import Section from '@/app/components/Section';
 import React from 'react';
-import { Section, LinkButton, DestinationCard } from "@components";
+
 import { Row } from "react-bootstrap";
 
 import { destinationItems } from '../data';
 
 const Discover = () => {
   return (
+  
     <Section
       id="block-discover"
       className="section-block position-relative bg-white"
@@ -16,6 +20,7 @@ const Discover = () => {
       renderedIn={`container`}
     >
       <Row className="box-shadow mx-0">
+     
         {destinationItems.map((destination, key) => (
           <DestinationCard {...destination} key={key} />
         ))}

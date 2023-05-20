@@ -1,9 +1,13 @@
+'use client'
 import React, { useState, useEffect } from "react";
 import { StyleSheet, css } from "aphrodite";
-import { fetchStoriesFromKerala } from "@api";
-import { Section, LinkButton } from "@components";
+//import { fetchStoriesFromKerala } from "@app/api/page";
+//import { Section, LinkButton } from "@components";
 
 import './_story.scss';
+import Section from "@/app/components/Section";
+import LinkButton from "@/app/components/LinkButton";
+import { fetchStoriesFromKerala } from "@/app/api/page";
 
 const Story = () => {
   const [story, setStory] = useState({});
@@ -30,6 +34,7 @@ const Story = () => {
   });
 
   return (
+    
     <Section
       id="block-stories"
       className="section-block mob-pt-0 position-relative pb-0"

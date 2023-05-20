@@ -1,9 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import { Row, Col, Button, Card } from "react-bootstrap";
 import { isMobile } from "react-device-detect";
 import classNames from "classnames";
-import { LinkButton } from "@components";
+import LinkButton from "@/app/components/LinkButton";
+import Link from "next/link";
+import Image from "next/image";
 
 const KeralaStoryWrapper = ({ children }) => {
   return (
@@ -23,12 +25,20 @@ const StoryPostImage = ({ desktopImg, mobileImg }) => {
 
   return (
     <Col lg={6} md={12} sm={12} xs={12} className="px-0">
-      <img
+      <Image
+      src={isMobile ? mobileImg : desktopImg}
+      className={storyImgClassName}
+      alt=""
+      title=""
+      width={100}
+      height={100}
+      />
+      {/* <img
         src={isMobile ? mobileImg : desktopImg}
         className={storyImgClassName}
         alt=""
         title=""
-      />
+      /> */}
     </Col>
   );
 };
@@ -67,13 +77,13 @@ const StoryDescription = ({ heading, description}) => {
       <Row>
         <Col xs={12}>
           <Link
-            to="/"
+            href="/"
             className="text-decoration-none small-text text-uppercase text-yellow ibm-semi-bold"
           >
             {`Inspiring`}
           </Link>
           <h3 className="head-sub font-flair mb-3">
-            <Link to="/" className="underline-0 text-dark">
+            <Link href="/" className="underline-0 text-dark">
               {heading}
             </Link>
           </h3>

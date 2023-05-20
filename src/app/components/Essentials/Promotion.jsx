@@ -1,9 +1,7 @@
 import React from "react";
 import { Col } from "react-bootstrap";
 import { string } from "prop-types";
-
-import { LinkButton } from "@components";
-
+import LinkButton from "../LinkButton";
 const Promotion = ({ heading, description, promotionImage }) => {
   return (
     <Col lg={6}>
@@ -16,6 +14,7 @@ const Promotion = ({ heading, description, promotionImage }) => {
           <p className="text-white ibm-font-18">
             { description }
           </p>
+         
           <LinkButton
             buttonColor="white"
             link="/"

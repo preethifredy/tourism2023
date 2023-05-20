@@ -1,12 +1,19 @@
+import Section from '@/app/components/Section';
+import Place from '@/app/components/Place';
 import React from 'react';
-import OwlCarousel from "react-owl-carousel";
+import dynamic from "next/dynamic";
+const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
+  ssr: false,
+});
+//import OwlCarousel from "react-owl-carousel";
 
-import { Section, Place } from "@components";
+//import { Section, Place } from "@components";
 
 import { places } from '../data';
 
 const Destination = () => {
   return (
+    
     <Section
       id="block-reg"
       className="reg-slide-block pt-5 mob-pt-0"
