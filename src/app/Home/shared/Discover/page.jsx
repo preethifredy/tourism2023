@@ -1,3 +1,4 @@
+'use client'
 import LinkButton from '@/app/components/LinkButton';
 import { DestinationCard } from '@/app/components/page';
 import Section from '@/app/components/Section';

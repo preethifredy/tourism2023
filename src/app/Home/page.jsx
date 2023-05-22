@@ -12,10 +12,10 @@ const page = () => {
       <Story />
        <Memories />
       <Discover />
-      {/* <KeralaStory />  */}
-      {/* <Events />*/}
-      <Destination /> 
-      <SocialGallery />      
+      {/* <KeralaStory /> */}
+       <Events />
+      <Destination />
+      <SocialGallery />
       <Section
         id="block-video"
         className="section-block"
@@ -30,7 +30,6 @@ const page = () => {
             linkText={`explore`}
           />
       </Section>
-     
     </div>
   )
 }
